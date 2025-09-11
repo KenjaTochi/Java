@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/css/page.css">  
+</head>
+<body>
+    <div class="page pagegrid">
+
+        <div class="header">
+            <img src="/img/header-logo.png"/>
+            <form id="searchForm" onsubmit="app.performSearch(); return false;" class="search-form">
+                <input type="text" id="searchInput" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+
+        <div class="leftbar">
+            <div class="filter-header">Filters</div>
+            <div id="filterSection"></div>
+        </div>
+
+        <div class="content">
+            <div class="results-count" id="resultsCount"></div>
+            <div id="contentArea"></div>
+        </div>
+
+        <div class="rightbar">
+            <div id="shopping-cart">
+                <div class="cart-header">Shopping Cart</div>
+                <div id="cart-items"></div>
+                <div id="cart-total"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>Help: Support & FAQs</p>
+            <p>Legal: Terms & Privacy</p>
+            <p>About Us: Our Story</p>
+            <p>Sign Up: Join our newsletter</p>
+        </div>
+
+    </div>
+
+    <script src="/js/application.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+</html>
